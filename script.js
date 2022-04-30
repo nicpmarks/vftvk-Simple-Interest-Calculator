@@ -1,6 +1,12 @@
 function loadSelect()
 {
-    
+    var yearsElement = document.getElementById("years");
+    for (var i=1;i<=10;i++) {
+        var option = document.createElement("option");
+        option.value = i.toString();
+        option.text =  i.toString();
+        yearsElement.appendChild(option);
+    }
 }
 
 function compute()
